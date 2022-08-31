@@ -1,0 +1,89 @@
+.content {
+  padding: 20px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-header h2 {
+  font-size: 3em;
+  padding: 10px;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+
+.left-side i {
+  padding: 0 10px;
+}
+
+.profile,
+.employment,
+.education {
+  margin: 10px 0;
+}
+
+.education ul {
+  margin-left: 40px;
+}
+
+
+.email {
+  color: #13274F;
+}
+
+.skill {
+  width: 100%;
+  display: grid;
+ 
+  margin: 1rem 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .percent {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #B9D9EB;
+}
+
+
+.skill .percent div {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #13274F;
+}
+
+
+@media(max-width: 412px) {
+  .content {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .resume-header h2 {
+    font-size: 2em;
+    padding: 10px;
+  }
+}
+
+@media(max-width: 375px) {
+  .content {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .resume-header h2 {
+    font-size: 2em;
+    padding: 10px;
+  }
+}

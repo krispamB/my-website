@@ -1,0 +1,151 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Lato:wght@300&family=Outfit:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Quicksand:wght@300&family=Red+Hat+Display:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: aliceblue;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 850px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  padding: 30px;
+}
+
+.head h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.head p {
+  margin-top: 20px;
+  font-weight: 300;
+  color: grey;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  transition: 0.6s;
+}
+
+nav ul a:hover {
+  color: grey;
+  letter-spacing: 2px;
+  border-bottom: 2px solid grey;
+}
+
+nav ul a:active {
+  color: blue;
+  border-bottom: 2px solid grey;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.social {
+  list-style: none;
+  padding: 50px;
+}
+
+.social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translate(-15px);
+}
+
+/* media */
+
+
+@media(max-width: 412px) {
+  .container {
+    width: 412px;
+    padding: 10px;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head {
+    padding: 20px;
+  }
+  
+  .head h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media(max-width: 375px) {
+  .container {
+    width: 375px;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head {
+    padding: 20px;
+  }
+  
+  .head h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+}

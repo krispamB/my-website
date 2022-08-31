@@ -1,0 +1,29 @@
+img {
+  width: 100%;
+}
+
+.icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 30px;
+  padding: 30px;
+}
+
+/* media */
+@media(max-width: 412px) {
+  .icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+@media(max-width: 375px) {
+  .icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    padding: 30px;
+  }
+}
